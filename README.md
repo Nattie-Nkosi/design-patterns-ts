@@ -1,3 +1,7 @@
+### Sorting different Data Structures
+
+- Learning how to sort arrays, characters collection(strings) and LinkedLists.
+
 ### Sorting Array of Numbers Algorithm
 
 ```js
