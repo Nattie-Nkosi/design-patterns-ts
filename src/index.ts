@@ -1,13 +1,20 @@
-import { Sorter } from "./Sorter";
-import { NumbersCollection } from "./NumbersCollection";
-import { CharactersCollection } from "./CharactersCollection";
+import { NumbersCollection } from "./Classes/NumbersCollection";
+import { CharactersCollection } from "./Classes/CharactersCollection";
+import { LinkedList } from "./Classes/LinkedList";
 
-/* const numbersColletion = new NumbersCollection([10, 5, -1, 9, 0, 2]);
-const sorter = new Sorter(numbersColletion);
-sorter.sort()
-console.log(numbersColletion.data); */
+const numbersColletion = new NumbersCollection([10, 5, -1, 9, 0, 2]);
+numbersColletion.sort()
+console.log(numbersColletion.data);
 
-const charactersCollection = new CharactersCollection('zywvu');
-const sorter = new Sorter(charactersCollection);
-sorter.sort()
+const charactersCollection = new CharactersCollection('howruidgdjamzury',);
+charactersCollection.sort();
 console.log(charactersCollection.data);
+
+const linkdeList = new LinkedList();
+linkdeList.add(-50)
+linkdeList.add(15);
+linkdeList.add(2);
+linkdeList.add(-1);
+
+linkdeList.sort()
+linkdeList.print()

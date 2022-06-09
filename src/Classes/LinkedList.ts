@@ -1,9 +1,11 @@
+import { Sorter } from "./Parent/Sorter";
+
 class Node {
   next: Node | null = null;
   constructor(public data: number) { }
 }
 
-class LinkedList {
+class LinkedList extends Sorter {
   head: Node | null = null;
 
   add(data: number): void {
@@ -64,7 +66,7 @@ class LinkedList {
     return this.at(leftIndex).data > this.at(rightIndex).data;
   }
 
-  swap(leftIndex: number, rightIndex: number) {
+  swap(leftIndex: number, rightIndex: number): void {
     const leftNode = this.at(leftIndex);
     const rightNode = this.at(rightIndex);
 

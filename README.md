@@ -1,10 +1,24 @@
-### Sorting different Data Structures
+# Design Patterns Project
 
+- Sorting different Data Structures.
 - Learning how to sort arrays, characters collection(strings) and LinkedLists.
 
-### Sorting Array of Numbers Algorithm
+### Architecture.
+
+**Parent Class**
+
+- Sorter
+<!-- A reusable Abstract class which does the sorting -->
+
+**SubClasses**
+
+- NumbersCollection
+- CharactersCollection
+- LinkedList
+<!-- This classes inherit from Sorter class and they must satisfy the class with required methods -->
 
 ```js
+/* TODO: Make this class reusable to subclasses*/
   class Sorter {
     constructor(public collection: number[]) {}
 
@@ -26,3 +40,5 @@
   sorter.sort();
   console.log(sorter.collection);
 ```
+
+- What's the difference between Abstract classes and interfces 🤔
